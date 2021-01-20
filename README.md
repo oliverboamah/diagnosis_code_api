@@ -44,5 +44,7 @@ Backend Take Home Challenge. This project contains RESTful APIS that allows you 
   
   docker-compose exec web python3 manage.py loaddata diagnosis_codes.json (Load initial fixtures of 4678 diagnosis code records)
   
+  docker-compose exec web python3 manage.py test (Run Unit Tests on API Endpoints)
+  
   ```
 * You can now visit the Browsable API page at http://127.0.0.1:8000/api/v1/codes/
