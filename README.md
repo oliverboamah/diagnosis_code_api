@@ -2,8 +2,9 @@
 Backend Take Home Challenge. This project contains RESTful APIS that allows you to utilize an internationally recognized set of diagnosis codes. The APIs allow you to:
 * Create a new diagnosis code record 
 ```/api/v1/codes/  POST REQUEST```
-SAMPLE PAYLOAD
+
 ``` 
+SAMPLE PAYLOAD
 {
     "id": "A0229",
     "category_code": "A022",
