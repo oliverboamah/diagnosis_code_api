@@ -6,5 +6,5 @@ from api_v1.views import (ListCreateDiagnosisCodesAPIView, RetrieveUpdateDestroy
 
 urlpatterns = [
     path('', ListCreateDiagnosisCodesAPIView.as_view()),
-    path('/<str:pk>', RetrieveUpdateDestroyDiagnosisCodeAPIView.as_view()),
+    path('<str:pk>', RetrieveUpdateDestroyDiagnosisCodeAPIView.as_view()),
 ]
