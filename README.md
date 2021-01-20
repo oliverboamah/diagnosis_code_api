@@ -1,10 +1,17 @@
 # diagnosis_code_api
 Backend Take Home Challenge. This project contains RESTful APIS that allows you to utilize an internationally recognized set of diagnosis codes. The APIs allow you to:
-* Create a new diagnosis code record
+* Create a new diagnosis code record 
+```/api/v1/codes/  POST REQUEST```
 * Edit an existing diagnosis code record
+```/api/v1/codes  PUT REQUEST```
 * List diagnosis codes in batches of 20(and paginate through the rest of the record)
+```/api/v1/codes/  GET REQUEST```
+```/api/v1/codes?page=1  GET REQUEST```
+```/api/v1/codes?page=2  GET REQUEST```
 * Retrieve diagnosis codes by ID
+```/api/v1/codes/:ID  GET REQUEST```
 * Delete diagnosis code by ID
+```/api/v1/codes/:ID  Delete REQUEST```
 
 ## Fun Fact
 * All API endpoints respond within 100ms
@@ -38,5 +45,4 @@ Backend Take Home Challenge. This project contains RESTful APIS that allows you 
   docker-compose exec web python3 manage.py loaddata diagnosis_codes.json (Load initial fixtures of 4678 diagnosis code records)
   
   ```
-* Copy the IP address provided once your server has completed building the site. (It will say something like >> Serving at 127.0.0.1....).
-* Open the address in the browser
+* You can now visit the Browsable API page at http://127.0.0.1:8000/api/v1/codes/
