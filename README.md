@@ -6,7 +6,7 @@ Backend Take Home Challenge. This project contains RESTful APIS that allows you 
 * Retrieve diagnosis codes by ID
 * Delete diagnosis code by ID
 
-## FUN FACT
+## Fun Fact
 * All API endpoints respond within 100ms
 * Project includes unit tests for all api endpoints
 
