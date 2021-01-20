@@ -1,15 +1,12 @@
-# Standart Library imports
-import json
-
 # Django imports
-from django.test import TestCase, Client
+from django.test import (TestCase, Client)
 
 # Third party imports
 from rest_framework import status
 
 # Local imports
 from api_v1.models import DiagnosisCode
-from api_v1.code_types import (ICD_9, ICD_10)
+from api_v1.code_types import ICD_10
 
 # Test module for deleting a diagnosis code record
 class DeleteDiagnosisCodeApiTest(TestCase):

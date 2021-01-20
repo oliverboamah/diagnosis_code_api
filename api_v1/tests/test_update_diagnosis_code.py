@@ -2,7 +2,7 @@
 import json
 
 # Django imports
-from django.test import TestCase, Client
+from django.test import (TestCase, Client)
 
 # Third party imports
 from rest_framework import status
