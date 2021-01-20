@@ -1,0 +1,19 @@
+# Use Ubuntu as Operation System
+FROM ubuntu:16.04
+
+# Use python 3.7
+FROM python:3.7
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Set work directory
+WORKDIR /code
+
+# Install dependencies
+COPY Pipfile Pipfile.lock /code/
+RUN pip install pipenv && pipenv install --system
+
+# Copy project 
+COPY . /code/
