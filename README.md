@@ -16,7 +16,7 @@ SAMPLE PAYLOAD
 }
 ```
 * Edit an existing diagnosis code record
-```/api/v1/codes  PUT REQUEST```
+```/api/v1/codes/:ID  PUT REQUEST```
 * List diagnosis codes in batches of 20(and paginate through the rest of the record)
 ```/api/v1/codes/  GET REQUEST```
 ```/api/v1/codes?page=1  GET REQUEST```
