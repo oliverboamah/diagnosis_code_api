@@ -2,6 +2,17 @@
 Backend Take Home Challenge. This project contains RESTful APIS that allows you to utilize an internationally recognized set of diagnosis codes. The APIs allow you to:
 * Create a new diagnosis code record 
 ```/api/v1/codes/  POST REQUEST```
+``` SAMPLE PAYLOAD
+{
+    "id": "A0229",
+    "category_code": "A022",
+    "diagnosis_code": "9",
+    "short_description": "infection",
+    "full_description": "Salmonella with other localized infection",
+    "category_title": "Localized salmonella infections",
+    "code_type": "icd-10"
+}
+```
 * Edit an existing diagnosis code record
 ```/api/v1/codes  PUT REQUEST```
 * List diagnosis codes in batches of 20(and paginate through the rest of the record)
